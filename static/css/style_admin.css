@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+  
+  html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    background-color:#023047 ;
+}
+
+nav{
+    padding: .8vw;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+nav ul{
+    background-color: #023047;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+
+}
+nav ul h2{
+    color: #8ecae6;
+    font-size: 2vw;   
+}
+nav ul li{
+    padding: .8vw; 
+    margin-left: 5vw;
+    justify-content: center;
+    color: #fff;
+    font-size: 1vw;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+} 
+
+
+  a {
+    cursor: pointer;
+  }
+  
+  article#new {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  }
+  
+  article#msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  article#msg ul {
+    width: 40%;
+    color: #48fd00d7;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight:600;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0 0 .5rem .5rem;
+    position: fixed;
+    top: 6rem;
+  }
+  
+  form{
+  padding: 3rem;
+  background-color: #fff;
+  width: 50%;
+  position: center;
+  border-radius: 1rem;
+  }
+  
+  form h1{
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #0a4c5c ;
+  font-size: 2rem;
+  }
+  
+  form input, textarea, select, option {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+  }
+  
+  form label {
+  width: 100%;
+  font-size: 1.2rem;
+  }
+  
+  form button {
+  border: 1px solid #0a4c5c;
+  background-color: #fff;
+  color: #0a4c5c;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+  width: 40%;
+  }
+  
+  form button:hover {
+  background-color: #0a4c5c;
+  color: #fff;
+  }
+  
+  form div{
+    display: flex;
+  }
+  
+  form div a{
+    border: 1px solid #ff0000;
+    background-color: #fff;
+    color: #ff0000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  form div a:hover {
+    background-color: #ff0000;
+    color: #fff;
+    }
+  
+
+  
+  
+
+
+  body section#body div{
+    justify-content: center;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 5%;
+  }

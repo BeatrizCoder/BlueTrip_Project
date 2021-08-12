@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,500&display=swap');
+
+*{margin: 0; padding:0; box-sizing:border-box;}
+
+body {
+    display: grid;
+    place-items: center;  
+}
+section div#item-wrapper {
+    width: 100%;
+}
+section div#item-wrapper div#item{
+    display: flex; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+    scroll-behavior: smooth; 
+}
+.item{
+    flex: none; 
+    width: 100%;
+    height: 700px;
+    scroll-snap-align: start; 
+    pointer-events: none;
+}
+section div#item-wrapper div#item img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/*html*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    padding: .8vw;
+    position: relative;
+    width: 100%;
+}
+nav ul{
+    background-color: #023047;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    
+}
+nav ul h2{
+    color: #8ecae6;
+    font-size: 2vw;
+}
+nav ul li{
+    padding: .8vw; 
+    margin-left: 5vw;
+    justify-content: center;
+    color: #fff;
+    font-size: 1vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li#adm{
+    padding: 1vw;
+    text-align: end;
+    text-decoration: none;
+    position: absolute;
+    top: .5vw;
+    right: 1vw;
+       
+}
+nav ul li#adm a img{
+    color: #fff; 
+    text-decoration: none;
+    width: 15%;
+  
+}
+
+
+
+section div#title{
+text-align: center; 
+justify-content: center; 
+align-items: center; 
+line-height: 2vw;
+
+}
+section div#title h1{
+    font-size: 1.8vw;
+    font-weight: 600;
+    padding: .8vw;
+}
+section div#title h2{
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+section#perfis{
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    padding-top: 1vw ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+section#perfis article{
+    padding: 2rem;
+    margin: 2vw;
+    box-shadow: #023047 0px 8px 24px;
+    border-radius: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer; 
+    width: 18vw;
+    height: 30vw;
+}
+section#perfis article p{
+    line-height: 1.5vw;
+    width: 100%;
+    height: 35%;
+    text-align: justify;
+    margin-top: .8vw;
+}
+section#perfis article img {
+    width: 180px;
+    height: 180px; ;
+    border-radius: 50%;
+    margin: auto; 
+    align-items: center;
+}
+section#perfis article div#contato{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+section#perfis article div#contato a{
+    margin: 1vw;
+    justify-content: center;
+    
+}
+section#perfis article div#contato a#linkedin{
+    color:#0e76a8 ;
+}
+section#perfis article div#contato a#github{
+    color: black;
+} 
+
+ 

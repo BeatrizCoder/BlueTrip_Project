@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    padding: .8vw;
+    position: relative;
+}
+nav ul{
+    background-color: #023047;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    
+}
+nav ul h2{
+    color: #8ecae6;
+    font-size: 2vw;
+    font-weight: 500;
+}
+nav ul li{
+    padding: .8vw; 
+    margin-left: 5vw;
+    justify-content: center;
+    color: #fff;
+    font-size: 1vw;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+} 
+nav ul li#adm{
+    padding: 1vw;
+    text-align: end;
+    text-decoration: none;
+    position: absolute;
+    top: .5vw;
+    right: 1vw;
+       
+}
+nav ul li#adm a img{
+    color: #fff; 
+    text-decoration: none;
+    width: 15%;
+  
+}
+/* ------------------------ */
+
+header div h2{
+    font-size: 2.5;
+    font-weight: 800;
+    text-align: center;
+    padding: 1.5vw;
+}
+
+section {
+    display: flex; 
+    justify-content: center;   
+    padding: 5vw;
+}
+
+section div#imagem{
+    width: 50%;
+}
+section div img{
+    width: 70%;
+    border-radius: 5%;
+}
+section div p{
+    font-size: 1.4vw;
+    text-align: justify;
+    color: black;
+    line-height: 4.2vw;
+}
+
+section div#button a button{
+    border: 1px;
+    background-color: #023047;
+    color:#8ecae6;
+    padding: 1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    border-radius: 5vw;
+    display: block;
+    margin: auto;
+    margin-top: 2vw;
+    cursor: pointer;
+    width: 20%;
+}
+
+section div#button a{
+    text-decoration: none;
+}
+
+footer{
+    padding:auto;
+    position: relative;
+    width: 100%;
+
+}
+
+footer ul li{
+    background-color: #023047;
+    width: 100%;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+}
+
+footer ul li a{
+    padding: 2vw; 
+    margin-left: 5vw;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+::-webkit-scrollbar-thumb {
+    background: #023047;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #219dbcc0;
+  }
+  

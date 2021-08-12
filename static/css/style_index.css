@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    display: grid;
+    place-items: center;  /*centraliza a imagem*/
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+::-webkit-scrollbar-thumb {
+    background: #023047;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #219dbcc0;
+  }
+  
+
+  div#vazia{
+      width: 100vw;
+      height: 80vh;
+      z-index: -500;
+  }
+/* CAROUSEL */
+
+div#myCarousel div#carousel-inner{
+    height: 100vh;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+div#myCarousel div#carousel-inner div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#myCarousel{
+    position: absolute;
+    height: 100vh;
+}
+
+.carousel{
+    width:100%;
+    z-index: -1;
+  }
+
+
+.item{
+    flex: none;
+    width: 100%;
+    height: 800px;
+    pointer-events: none;
+}
+
+/*html*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav{
+    padding: .8vw;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+nav ul{
+    background-color: #023047;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+
+}
+nav ul h2{
+    color: #8ecae6;
+    font-size: 2vw;   
+}
+nav ul li{
+    padding: .8vw; 
+    margin-left: 5vw;
+    justify-content: center;
+    color: #fff;
+    font-size: 1vw;
+
+}
+nav ul li#adm{
+    padding: 1vw;
+    text-align: end;
+    text-decoration: none;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+}
+nav ul li#adm a img{
+    color: #fff; 
+    text-decoration: none;
+    width: 15%;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+} 
+
+
+
+/* SECTION COVID */
+
+main{
+    display: block;
+    position: relative;
+}
+
+section#covid{
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+section#covid div#alerta {
+    padding: auto;
+    border: 2px solid #023047;
+    border-radius: 5rem;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+section#covid div#alerta div#protocolo{
+    padding: 2vw; 
+    width: 100%;   
+    
+   
+}
+section#covid div#alerta div#protocolo h3{
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: auto;
+    text-align: start;
+    line-height: 2vw;
+    
+}
+section#covid div#alerta div#protocolo p{
+    font-size: 1vw;
+    font-weight: 400;
+    padding: auto;
+    text-align: justify;
+    line-height: 3vw;
+
+}
+section#covid div#alerta div#covidimg{
+    width: 100%;
+    padding: auto;
+    align-items: center;
+    display: block;
+}
+section#covid div#alerta div#covidimg img{
+    width: 70%;
+    padding: auto;
+    align-items: center;
+    
+}
+
+section#cards{
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+section#cards div#destinos1 {
+    padding: 3vw;
+    display: flex;
+} 
+section#cards div#destinos1 div {
+    border: none;
+    padding: 3vw;
+    text-align: center;
+    font-size: 1.4vw;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 2s ease-out;
+    color:black;
+    font-weight: 600; 
+    opacity: 0.4;  
+    width: 100%; 
+    
+
+}
+section#cards div#destinos1 div p{
+    word-wrap: break-word;
+    font-size: 1.2;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+section#cards div#destinos1 div h2{
+    color:#fff;
+    font-weight: 700; 
+    text-decoration: none;
+    
+}
+section#cards div#destinos1 div#destino-card1{
+    background-image: url('../img/jalapon.webp');
+    background-position: center; 
+    background-size: cover;
+    margin: 0 2vw 0 0;
+}
+section#cards div#destinos1 div#destino-card2{
+    background-image: url('../img/gramado1.jpg');
+    background-position: center; 
+    background-size: cover;
+    margin: 0 0 0 2vw;
+}
+section#cards div#destinos1 div:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+      
+}
+
+section#cards div#destinos2 {
+    padding: 3vw;
+    display: flex;
+    
+} 
+section#cards div#destinos2 div {
+    border: none;
+    padding: 3vw;
+    text-align: center;
+    font-size: 1.4vw;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: 2s ease-out;
+    color:#fff;
+    font-weight: 600; 
+    opacity: 0.4;  
+    width: 100%; 
+
+}
+section#cards div#destinos2 div p{
+    word-wrap: break-word;
+    font-size: 1.2;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+section#cards div#destinos2 div h2{
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none; 
+    
+}
+section#cards div#destinos2 div#destino-card3{
+    background-image: url('../img/frutigen2.jpg');
+    background-position: center; 
+    background-size: cover;
+    margin: 0 2vw 0 0;
+}
+section#cards div#destinos2 div#destino-card4{
+    background-image: url('../img/islandia.jpg');
+    background-position: center; 
+    background-size: cover;
+    margin: 0 0 0 2vw;
+}
+section#cards div#destinos2 div:hover{
+    background-color: #219dbcc0;
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+
+
+footer{
+    padding:auto;
+    position: relative;
+    width: 100%;
+    align-items: center;
+
+}
+footer ul{
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li{
+    background-color: #023047;
+    width: 100%;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+}
+
+footer ul li a{
+    padding: 2vw; 
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+

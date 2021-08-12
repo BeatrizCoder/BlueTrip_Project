@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* div div form div#login{
+    display:block;
+}
+
+div div form div#senha{
+    display:block;
+}
+
+.container {
+    height: 800px;
+    position: relative;
+  }
+  
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
+
+html,body {
+    height:100%;
+    width:100%;
+    margin:0;
+  }
+  body {
+    display:flex;
+  }
+  div# {
+    margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+  }
+
+div#parent {
+    display: table;
+    width: 100%;
+ }
+ #form_login {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }

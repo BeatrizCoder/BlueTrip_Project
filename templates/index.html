@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Trip</title>
+    <link rel="stylesheet" href="../static/css/style_index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- BOOSTRAP -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <h2>Blue Trip</h2>
+            <li><a href="#cards">Nossos pacotes</a></li>
+            <li><a href="/missao">Missão</a></li>
+            <li id="adm">
+                <a  href='/admin' >
+                    <img src="../static/img/user.png" alt="">
+                </a>
+            </li>
+
+        </ul>
+        
+    </nav>
+
+
+
+    <!------- carousel ---->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" id="carousel-inner">
+            <div class="item active">
+                <img src="../static/img/photo01.jpg" alt="Chania">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../static/img/frutigen2.jpg" alt="Chicago">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../static/img/jericoacoara.jpg" alt="New York">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="vazia">
+
+    </div>
+
+
+    <section id="covid">
+        <div id="alerta">
+            <div id="protocolo">
+                <h3>Viaje com segurança</h3>
+                <p>Protocolos de saúde COVID-19</p>
+            </div>
+            <div id="covidimg">
+                <img src="../static/img/covid.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="cards">
+        <div id="destinos1">
+            <div id="destino-card1">
+                <a href="/pacotes">
+                    <h2>Destinos Nacionais</h2>
+                    <p>Aproveite o melhor do Brasil.</p>
+                </a>
+            </div>
+            <div id="destino-card2">
+                <a href="/pacotes">
+                    <h2>Destinos Nacionais</h2>
+                    <p>Do norte ao sul. Os lugares mais bonitos do Brasil.</p>
+                </a>
+            </div>
+        </div>
+        <div id="destinos2">
+            <div id="destino-card3">
+                <a href="/pacotes">
+                    <h2>Destinos Internacionais</h2>
+                    <p>Os mais belos destinos internacionais. Viaje nessa história.</p>
+                </a>
+            </div>
+            <div id="destino-card4">
+                <a href="/pacotes">
+                    <h2>Destinos Internacionais</h2>
+                    <p>Aconchego e aventura.</p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="../static/js/script.js"></script>
+</body>
+<footer>
+    <ul>
+        <li>
+            <a href="/perfil">Quem somos</a>
+           
+           
+        </li>
+
+    </ul>
+
+</footer>
+
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+  
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    background-color:#023047;
+}
+
+nav{
+  padding: .8vw;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+nav ul{
+  background-color: #023047;
+  list-style: none;
+  display: flex; 
+  justify-content: center;
+
+}
+nav ul h2{
+  color: #8ecae6;
+  font-size: 2vw;   
+}
+nav ul li{
+  padding: .8vw; 
+  margin-left: 5vw;
+  justify-content: center;
+  color: #fff;
+  font-size: 1vw;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  
+} 
+  
+  a {
+    cursor: pointer;
+  }
+  
+  
+  body article#lista table thead{
+    text-align: center;
+  }
+  
+  article#new {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  
+  }
+  
+  article#msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  article#msg ul {
+    width: 40%;
+    background-color: #c8ffcb;
+    color: #007a1f;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight:600;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0 0 .5rem .5rem;
+    position: fixed;
+    top: 0;
+  }
+  
+  form{
+  padding: 3rem;
+  background-color: #fff;
+  width: 50%;
+  position: relative;
+  border-radius: 1rem;
+  }
+  
+  form h1{
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #0066ff ;
+  font-size: 2rem;
+  }
+  
+  form input, textarea{
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+  }
+  
+  form label {
+  width: 100%;
+  font-size: 1.2rem;
+  }
+  
+  form button {
+  border: 1px solid #023047;
+  background-color: #fff;
+  color: #023047;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+  width: 40%;
+  }
+  
+  form button:hover {
+  background-color: #0a4c5c;
+  color: #fff;
+  }
+  
+  form div{
+    display: flex;
+  }
+  
+  form div a{
+    border: 1px solid #ff0000;
+    background-color: #fff;
+    color: #ff0000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  form div a:hover {
+    background-color: #ff0000;
+    color: #fff;
+    }
+  
+  article#lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
+    padding-top: 6rem;
+    overflow-x: auto;
+  }
+  
+  
+  article#lista table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 3rem;
+    background-color: #fff;
+    width: 65%;
+    border-radius: 1rem;
+  }
+  
+  article#lista table th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  }
+  
+  article#lista table td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+  article#lista table a {
+  padding: 1rem;
+  color: #023047;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  article#lista table a:hover{
+    color: #0660e6;
+  }
+  
+  article#edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+  }
+  
+  body section#body div{
+    justify-content: center;
+    text-align: center;
+    padding-left: 30%;
+    padding-top: 5%;
+  }
+
+  /* Quando a tela tiver no máximo 1682 de largura, faça o que tiver dentro desse @media */
+  @media screen and (max-width: 1682px){  
+    form{
+      width: 100%;
+    }
+    article#new{
+      padding: 2%;
+    }
+  
+    article#lista{
+      padding: 2%;
+    }
+  
+    article#lista table{
+      width: 100%;
+    }
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style_admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blue Trip | Administração</title>
+</head>
+
+<body>
+
+   
+    <nav>
+        <ul>
+            <h2>Blue Trip | Administração</h2>
+            <a href="/listagem" id="btn-listar">
+                <li>
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    Listar viagens
+                </li>
+            </a>
+            <a href="/">
+                <li>
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    Página inicial
+                </li>
+            </a>
+            <a href="/logout">
+                <li>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sair
+                </li>
+            </a>
+
+        </ul>
+    </nav>
+
+    <article id="msg">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class=flashes>
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </article>
+
+    <section id="body">
+
+        <div id="formulario">
+            <form action="/new" method="POST">
+
+                <!-- CAMPO DESTINO -->
+                <label for="destino">Destino</label>
+                <input type="text" placeholder="Digite o novo destino" id="destino" name="destino" value="{{viagem.destino}}">
+
+                <!-- CAMPO IMAGEM -->
+                <label for="link">Link da imagem</label>
+                <input type="text" placeholder="Link da imagem"   id="link" name="link" value="{{viagem.link}}">
+
+                <!-- CAMPO PRECO -->
+                <label for="preco">Preço</label>
+                <input type="number" placeholder="Insira o valor do novo destino" id="preco" name="preco" value="{{viagem.preco}}">
+
+                <!-- CAMPO DESCRICAO -->
+                <label for="descricao">Descrição do novo destino</label>
+                <textarea name="descricao" id="descricao" cols="20" rows="8"
+                    placeholder="Insira a descrição do novo destino">
+                    {{viagem.descricao}}
+                </textarea>
+
+                <!-- SELECT do Tipo da Viagem -->
+                <label for="tipo_viagem">Escolha o tipo da viagem:</label>
+
+                <select name="tipo_viagem" id="tipo_viagem">
+                    <option value="viagem-nacional">Viagem Nacional</option>
+                    <option value="viagem-internacional">Viagem Internacional</option>
+                </select>
+
+                <button type="submit" id="btnCadastro" name='btnCadastro'>Inserir</button>
+            </form>
+        </div>
+
+
+    </section>
+
+
+    <script src="../static/js/script_admin.js"></script>
+</body>
+
+</html>

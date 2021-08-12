@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style_listagem.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <h2>Blue Trip | Administração</h2>
+            <a href="/admin" id="btn-listar">
+                <li>
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    Adicionar viagens
+                </li>
+            </a>
+            <a href="/">
+                <li>
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    Página inicial
+                </li>
+            </a>
+            <a href="/logout">
+                <li>
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Sair
+                </li>
+            </a>
+
+        </ul>
+    </nav>
+
+    {% if viagem == '' %}
+    <article id="lista">
+        <table>
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Destino</th>
+                    <th>Link da imagem</th>
+                    <th>Preço</th>
+                    <th>Descrição</th>
+                    <th>Tipo da viagem</th>
+                    <th style="text-align:center">Edição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for i in viagens %}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.destino}}</td>
+                    <td><a href="{{i.link}}" target="_blank">{{i.link}}</a></td>
+                    <td><a href="{{i.preco}}" target="_blank">{{i.preco}}</a></td>
+                    <td><a href="{{i.descricao}}" target="_blank">{{i.descricao}}</a></td>
+                    <td><a href="{{i.tipo_viagem}}" target="_blank">{{i.tipo_viagem}}</a></td>
+                    <td><a href="/editar/{{i.id}}">Editar</a></td>
+                    <td><a href="/delete/{{i.id}}">Apagar</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </article>
+    {% endif %}
+
+
+    {% if viagemdel != undefined %}
+    <section class="modal">
+        <div id="card">
+
+            <a href="/admin" id="fechar"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <h2>Confirmação</h2>
+            <hr>
+
+            <p>Deseja realmente apagar a viagem: {{viagemdel.destino}} </p>
+            <div id="btns">
+                <a class="btn-cancelar" id="close" href="/listagem">Cancelar</a>
+                <a class="btn-apagar" href="/delete/{{viagemdel.id}}">Apagar</a>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+</body>
+
+</html>
